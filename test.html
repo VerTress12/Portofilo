@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Alief Mukhsin Fathonah</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 max-w-[1600px] mx-auto flex">
+
+  <!-- Sidebar -->
+  <aside
+    id="sidebar"
+    class="fixed inset-y-0 left-0 w-72 bg-white shadow-lg z-40 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out"
+  >
+    <div class="p-6">
+      <button
+        class="md:hidden mb-4 text-gray-700 text-3xl float-right"
+        aria-label="Close menu"
+        onclick="toggleSidebar()"
+      >
+        <i class="fa fa-remove"></i>
+      </button>
+      <img
+        src="image/alief.jpg"
+        alt="Avatar"
+        class="w-1/2 rounded-full block mx-auto"
+      />
+      <h4 class="mt-6 text-center font-bold text-lg">PORTFOLIO</h4>
+      <p class="text-center text-gray-500">Alief Mukhsin Fathonah</p>
+    </div>
+    <nav class="flex flex-col space-y-2 px-6">
+      <a
+        href="#portfolio"
+        onclick="toggleSidebar()"
+        class="flex items-center space-x-3 text-teal-600 font-semibold py-2 hover:text-teal-800"
+      >
+        <i class="fa fa-th-large fa-fw"></i>
+        <span>PORTFOLIO</span>
+      </a>
+      <a
+        href="#about"
+        onclick="toggleSidebar()"
+        class="flex items-center space-x-3 text-gray-700 py-2 hover:text-teal-600"
+      >
+        <i class="fa fa-user fa-fw"></i>
+        <span>ABOUT</span>
+      </a>
+      <a
+        href="#contact"
+        onclick="toggleSidebar()"
+        class="flex items-center space-x-3 text-gray-700 py-2 hover:text-teal-600"
+      >
+        <i class="fa fa-envelope fa-fw"></i>
+        <span>CONTACT</span>
+      </a>
+    </nav>
+    <div
+      class="mt-auto p-6 flex justify-center space-x-4 text-gray-500 text-xl cursor-pointer"
+    >
+      <i class="fa fa-facebook-official hover:opacity-80"></i>
+      <i class="fa fa-instagram hover:opacity-80"></i>
+      <i class="fa fa-snapchat hover:opacity-80"></i>
+      <i class="fa fa-pinterest-p hover:opacity-80"></i>
+      <i class="fa fa-twitter hover:opacity-80"></i>
+      <i class="fa fa-linkedin hover:opacity-80"></i>
+    </div>
+  </aside>
+
+  <!-- Overlay -->
+  <div
+    id="overlay"
+    class="fixed inset-0 bg-black bg-opacity-50 hidden z-30 md:hidden"
+    onclick="toggleSidebar()"
+  ></div>
+
+  <!-- Main content -->
+  <main
+    class="flex-1 ml-0 md:ml-72 p-6 md:p-12 overflow-auto min-h-screen"
+  >
+    <!-- Header -->
+    <header id="portfolio" class="mb-8">
+      <div class="flex justify-between items-center md:hidden mb-4">
+        <img
+          src="image/alief.jpg"
+          alt="Avatar"
+          class="w-16 rounded-full"
+        />
+        <button
+          aria-label="Open menu"
+          class="text-3xl text-gray-700"
+          onclick="toggleSidebar()"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+      <h1 class="text-4xl font-extrabold mb-4">My Portfolio</h1>
+      <div class="flex flex-wrap gap-3 items-center border-b border-gray-300 pb-3">
+        <span class="mr-4 font-semibold">Filter:</span>
+        <button class="bg-black text-white px-4 py-2">ALL</button>
+        <button class="bg-white border border-gray-400 px-4 py-2 flex items-center gap-2 hover:bg-gray-100">
+          <i class="fa fa-diamond"></i> Design
+        </button>
+        <button
+          class="hidden sm:flex bg-white border border-gray-400 px-4 py-2 items-center gap-2 hover:bg-gray-100"
+        >
+          <i class="fa fa-photo"></i> Photos
+        </button>
+        <button
+          class="hidden sm:flex bg-white border border-gray-400 px-4 py-2 items-center gap-2 hover:bg-gray-100"
+        >
+          <i class="fa fa-map-pin"></i> Art
+        </button>
+      </div>
+    </header>
+
+    <!-- Photo Grids -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <article class="bg-white rounded shadow hover:shadow-lg transition-shadow">
+        <img
+          src="image/Screenshot 2024-12-30 184914.png"
+          alt="Norway"
+          class="w-full rounded-t cursor-pointer hover:opacity-80 transition-opacity"
+        />
+        <div class="p-4 text-gray-800">
+          <p class="font-bold mb-2">Website Laporan Unit ELIT </p>
+          <p>
+           Berisikan laporan kegiatan Unit ELIT selama satu hari berkerja.
+           Memiliki fitur Laporan Harian, Laporan kegiatan Sunrise, Laporan Kegiatan Sunset
+          </p>
+        </div>
+      </article>
+      <article class="bg-white rounded shadow hover:shadow-lg transition-shadow">
+        <img
+          src="/w3images/lights.jpg"
+          alt="Norway"
+          class="w-full rounded-t cursor-pointer hover:opacity-80 transition-opacity"
+        />
+        <div class="p-4 text-gray-800">
+          <p class="font-bold mb-2">Lorem Ipsum</p>
+          <p>
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam
+            non fringilla.
+          </p>
+        </div>
+      </article>
+      <article class="bg-white rounded shadow hover:shadow-lg transition-shadow">
+        <img
+          src="/w3images/nature.jpg"
+          alt="Norway"
+          class="w-full rounded-t cursor-pointer hover:opacity-80 transition-opacity"
+        />
+        <div class="p-4 text-gray-800">
+          <p class="font-bold mb-2">Lorem Ipsum</p>
+          <p>
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam
+            non fringilla.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <article class="bg-white rounded shadow hover:shadow-lg transition-shadow">
+        <img
+          src="/w3images/p1.jpg"
+          alt="Photo 1"
+          class="w-full rounded-t cursor-pointer hover:opacity-80 transition-opacity"
+        />
+        <div class="p-4 text-gray-800">
+          <p class="font-bold mb-2">Lorem Ipsum</p>
+          <p>
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam
+            non fringilla.
+          </p>
+        </div>
+      </article>
+      <article class="bg-white rounded shadow hover:shadow-lg transition-shadow">
+        <img
+          src="/w3images/p2.jpg"
+          alt="Photo 2"
+          class="w-full rounded-t cursor-pointer hover:opacity-80 transition-opacity"
+        />
+        <div class="p-4 text-gray-800">
+          <p class="font-bold mb-2">Lorem Ipsum</p>
+          <p>
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam
+            non fringilla.
+          </p>
+        </div>
+      </article>
+      <article class="bg-white rounded shadow hover:shadow-lg transition-shadow">
+        <img
+          src="/w3images/p3.jpg"
+          alt="Photo 3"
+          class="w-full rounded-t cursor-pointer hover:opacity-80 transition-opacity"
+        />
+        <div class="p-4 text-gray-800">
+          <p class="font-bold mb-2">Lorem Ipsum</p>
+          <p>
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
+            condimentum, porta lectus vitae, ultricies congue gravida diam
+            non fringilla.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Pagination -->
+    <div class="flex justify-center space-x-2 mb-12">
+      <a
+        href="#"
+        class="px-4 py-2 bg-gray-200 hover:bg-gray-400 rounded cursor-pointer"
+        aria-label="Previous page"
+        >«</a
+      >
+      <a href="#" class="px-4 py-2 bg-black text-white rounded">1</a>
+      <a
+        href="#"
+        class="px-4 py-2 bg-gray-200 hover:bg-gray-400 rounded cursor-pointer"
+        >2</a
+      >
+      <a
+        href="#"
+        class="px-4 py-2 bg-gray-200 hover:bg-gray-400 rounded cursor-pointer"
+        >3</a
+      >
+      <a
+        href="#"
+        class="px-4 py-2 bg-gray-200 hover:bg-gray-400 rounded cursor-pointer"
+        >4</a
+      >
+      <a
+        href="#"
+        class="px-4 py-2 bg-gray-200 hover:bg-gray-400 rounded cursor-pointer"
+        aria-label="Next page"
+        >»</a
+      >
+    </div>
+
+    <!-- About Me -->
+    <section id="about" class="mb-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <img src="/w3images/avatar_g.jpg" alt="Me" class="w-full rounded" />
+        <img src="/w3images/me2.jpg" alt="Me" class="w-full rounded" />
+      </div>
+      <div class="bg-white p-8 rounded shadow">
+        <h4 class="font-bold text-xl mb-4">About Me</h4>
+        <p class="mb-6 text-gray-700">
+          Just me, myself and I, exploring the universe of unknownment. I have a
+          heart of love and an interest of lorem ipsum and mauris neque quam
+          blog. I want to share my world with you. Praesent tincidunt sed
+          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+          ultricies congue gravida diam non fringilla. Praesent tincidunt sed
+          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+          ultricies congue gravida diam non fringilla.
+        </p>
+        <hr class="mb-6" />
+        <h4 class="font-bold text-xl mb-4">Technical Skills</h4>
+
+        <div class="mb-4">
+          <p>Photography</p>
+          <div class="bg-gray-300 rounded overflow-hidden">
+            <div
+              class="bg-gray-800 text-white text-center py-1"
+              style="width:95%"
+            >
+              95%
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <p>Web Design</p>
+          <div class="bg-gray-300 rounded overflow-hidden">
+            <div
+              class="bg-gray-800 text-white text-center py-1"
+              style="width:85%"
+            >
+              85%
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <p>Photoshop</p>
+          <div class="bg-gray-300 rounded overflow-hidden">
+            <div
+              class="bg-gray-800 text-white text-center py-1"
+              style="width:80%"
+            >
+              80%
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="bg-gray-800 text-white px-6 py-3 rounded flex items-center space-x-3 hover:bg-gray-700 transition"
+        >
+          <i class="fa fa-download"></i>
+          <span>Download Resume</span>
+        </button>
+
+        <hr class="my-8" />
+
+        <h4 class="font-bold text-xl mb-6">How much I charge</h4>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="bg-white border border-gray-300 rounded shadow text-center opacity-80 hover:opacity-100 transition-opacity"
+          >
+            <div class="bg-black text-white text-3xl py-8 font-bold">Basic</div>
+            <ul class="p-6 space-y-4 text-gray-800">
+              <li>Web Design</li>
+              <li>Photography</li>
+              <li>1GB Storage</li>
+              <li>Mail Support</li>
+              <li>
+                <h2 class="text-3xl font-bold">$10</h2>
+                <span class="text-gray-400 text-sm">per month</span>
+              </li>
+              <li>
+                <button
+                  class="bg-teal-600 text-white w-full py-3 rounded hover:bg-black"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-white border border-gray-300 rounded shadow text-center opacity-80 hover:opacity-100 transition-opacity"
+          >
+            <div class="bg-teal-600 text-white text-3xl py-8 font-bold">Pro</div>
+            <ul class="p-6 space-y-4 text-gray-800">
+              <li>Web Design</li>
+              <li>Photography</li>
+              <li>50GB Storage</li>
+              <li>Endless Support</li>
+              <li>
+                <h2 class="text-3xl font-bold">$25</h2>
+                <span class="text-gray-400 text-sm">per month</span>
+              </li>
+              <li>
+                <button
+                  class="bg-teal-600 text-white w-full py-3 rounded hover:bg-black"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-white border border-gray-300 rounded shadow text-center opacity-80 hover:opacity-100 transition-opacity"
+          >
+            <div class="bg-black text-white text-3xl py-8 font-bold">Premium</div>
+            <ul class="p-6 space-y-4 text-gray-800">
+              <li>Web Design</li>
+              <li>Photography</li>
+              <li>Unlimited Storage</li>
+              <li>Endless Support</li>
+              <li>
+                <h2 class="text-3xl font-bold">$25</h2>
+                <span class="text-gray-400 text-sm">per month</span>
+              </li>
+              <li>
+                <button
+                  class="bg-teal-600 text-white w-full py-3 rounded hover:bg-black"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-gray-300 p-8 rounded shadow mb-12">
+      <h4 class="font-bold text-2xl mb-8">Contact Me</h4>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-6">
+        <div class="bg-gray-800 text-gray-300 p-6 rounded">
+          <i class="fa fa-envelope text-5xl mb-3"></i>
+          <p>email@email.com</p>
+        </div>
+        <div class="bg-teal-600 text-gray-300 p-6 rounded">
+          <i class="fa fa-map-marker text-5xl mb-3"></i>
+          <p>Chicago, US</p>
+        </div>
+        <div class="bg-gray-800 text-gray-300 p-6 rounded">
+          <i class="fa fa-phone text-5xl mb-3"></i>
+          <p>512312311</p>
+        </div>
+      </div>
+
+      <form
+        action="/action_page.php"
+        target="_blank"
+        class="max-w-xl mx-auto space-y-6"
+      >
+        <div>
+          <label for="name" class="block mb-2 font-semibold">Name</label>
+          <input
+            id="name"
+            name="Name"
+            type="text"
+            required
+            class="w-full border border-gray-400 p-3 rounded focus:outline-none focus:ring-2 focus:ring-teal-600"
+          />
+        </div>
+        <div>
+          <label for="email" class="block mb-2 font-semibold">Email</label>
+          <input
+            id="email"
+            name="Email"
+            type="email"
+            required
+            class="w-full border border-gray-400 p-3 rounded focus:outline-none focus:ring-2 focus:ring-teal-600"
+          />
+        </div>
+        <div>
+          <label for="message" class="block mb-2 font-semibold">Message</label>
+          <textarea
+            id="message"
+            name="Message"
+            required
+            rows="4"
+            class="w-full border border-gray-400 p-3 rounded resize-none focus:outline-none focus:ring-2 focus:ring-teal-600"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-black text-white py-3 rounded flex justify-center items-center gap-3 hover:bg-gray-900 transition"
+        >
+          <i class="fa fa-paper-plane"></i>Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
+        <div>
+          <h3 class="font-semibold text-lg mb-3">FOOTER</h3>
+          <p class="mb-3">
+            Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum,
+            porta lectus vitae, ultricies congue gravida diam non fringilla.
+          </p>
+          <p>
+            Powered by
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              class="underline hover:text-white"
+              >Tailwind CSS</a
+            >
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg mb-3">BLOG POSTS</h3>
+          <ul>
+            <li class="flex mb-4 items-center space-x-4 cursor-pointer hover:text-white">
+              <img
+                src="/w3images/workshop.jpg"
+                alt="Workshop"
+                class="w-12 rounded"
+              />
+              <div>
+                <p class="font-semibold">Lorem</p>
+                <p class="text-sm text-gray-400">Sed mattis nunc</p>
+              </div>
+            </li>
+            <li class="flex items-center space-x-4 cursor-pointer hover:text-white">
+              <img
+                src="/w3images/gondol.jpg"
+                alt="Gondol"
+                class="w-12 rounded"
+              />
+              <div>
+                <p class="font-semibold">Ipsum</p>
+                <p class="text-sm text-gray-400">Praes tinci sed</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg mb-3">POPULAR TAGS</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-black px-3 py-1 rounded text-sm">Travel</span>
+            <span class="bg-gray-600 px-3 py-1 rounded text-sm">New York</span>
+            <span class="bg-gray-600 px-3 py-1 rounded text-sm">London</span>
+            <span class="bg-gray-600 px-3 py-1 rounded text-sm">IKEA</span>
+            <span class="bg-gray-600 px-3 py-1 rounded text-sm">NORWAY</span>
+            <span class="bg-gray-600 px-3 py-1 rounded text-sm">DIY</span>
+            <span class="bg-gray-600 px-3 py-1 rounded text-sm">Ideas</span>
+            <span class="bg-gray-600 px-3 py-1 rounded text-sm">Baby</span>
+            <span class="bg-gray-600 px-3 py-1 rounded text-sm">Family</span>
+            <span class="bg-gray-600 px-3 py-1 rounded text-sm">News</span>
+            <span class="bg-gray-600 px-3 py-1 rounded text-sm">Clothing</span>
+            <span class="bg-gray-600 px-3 py-1 rounded text-sm">Shopping</span>
+            <span class="bg-gray-600 px-3 py-1 rounded text-sm">Sports</span>
+            <span class="bg-gray-600 px-3 py-1 rounded text-sm">Games</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="bg-black text-center py-6 text-gray-300 text-sm">
+      Powered by
+      <a
+        href="https://tailwindcss.com/"
+        target="_blank"
+        class="underline hover:text-white"
+        >VerTress</a
+      >
+    </div>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+      sidebar.classList.toggle("-translate-x-full");
+      overlay.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
